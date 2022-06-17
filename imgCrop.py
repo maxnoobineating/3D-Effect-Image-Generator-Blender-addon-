@@ -315,12 +315,12 @@ cropping: quarter
             iio.imwrite(finalPath, canvas[:, :, 0].astype('uint8'))
         else:
             finalPath = os.path.join(subPath, imgName, f"FinalPrint-{imgName}-{str(m+1)}.png")
-        print(f'''
+            print(f'''
 
 ########## Final Path Save as {os.path.join(subPath, imgName, f"FinalPrint-{imgName}-{str(m+1)}.png")}
 
         ''')
-        iio.imwrite(finalPath, canvas.astype('uint8'))
+            iio.imwrite(finalPath, canvas.astype('uint8'))
 
 
 if __name__ == "__main__":
